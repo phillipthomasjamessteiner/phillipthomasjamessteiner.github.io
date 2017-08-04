@@ -217,7 +217,8 @@ function MainLoop() {
 createEntityFromXML(1);
 
 function createEntityFromXML (id) {
-    var xmlDoc = getXML("ships.xml")
+    var xmlDoc = getXML("ships.xml");
+    console.log(xmlDoc.getElementsByTagName("R")[0].nodeValue);
 }
 
 function getXML(url) {
