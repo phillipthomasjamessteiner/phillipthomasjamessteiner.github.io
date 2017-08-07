@@ -431,7 +431,7 @@ function createEntityFromXML (id, startX, startY, startRot, factionID, AiState) 
         }
         xhttp.onreadystatechange = function() {
             // console.log("stateChangeTo:" + this.readyState + "   Status:" + this.status);
-            if (this.readyState == 4 && this.status == 0) { // change required status to 200 for web access
+            if (this.readyState == 4 && this.status == 200) { // change required status to 200 for web access
                 // return xhttp.responseXML;
                 createEntity(xhttp);
             }
