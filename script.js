@@ -441,6 +441,7 @@ function createEntityFromXML (id, startX, startY, startRot, factionID, AiState) 
     }
     function createEntity(xml) {
         var xmlDoc = xml.responseXML;
+        console.log(xmlDoc);
 
         var ent = new entity(startX, startY, 0, 0, 0, 0, startRot, startRot, 0, 0, 0, factionID, AiState);
         if (AiState == 0) {
