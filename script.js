@@ -436,7 +436,7 @@ function createEntityFromXML (id, startX, startY, startRot, factionID, AiState) 
                 createEntity(xhttp);
             }
         }
-        xhttp.open("GET", "ships.xml", true);
+        xhttp.open("GET", "https://phillipthomasjamessteiner.github.io/ships.xml", true);
         xhttp.send();
     }
     function createEntity(xml) {
